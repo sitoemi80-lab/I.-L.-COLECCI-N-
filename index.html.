@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I.L. COLECCIÓN</title>
+    <style>
+        body { background-color: #0a0a0a; color: #d4af37; font-family: 'Arial', sans-serif; text-align: center; margin: 0; padding: 20px; }
+        h1 { font-size: 3em; letter-spacing: 5px; margin-top: 50px; }
+        .container { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 50px; }
+        .drop-card { background: #1a1a1a; padding: 20px; border: 1px solid #d4af37; border-radius: 10px; width: 300px; }
+        .drop-card img { width: 100%; border-radius: 5px; }
+        .status { margin-top: 20px; font-weight: bold; color: #fff; background: #333; padding: 10px; border-radius: 5px; pointer-events: none; }
+        footer { margin-top: 100px; color: #666; }
+    </style>
+</head>
+<body>
+
+    <h1>I.L. COLECCIÓN</h1>
+    <p>Diseño Independiente | Hecho en México</p>
+
+    <div class="container">
+        <div class="drop-card">
+            <h3>Drop: EUPHORIA</h3>
+            <img src="1000056661.jpg" alt="Camiseta Euphoria">
+            <button class="status">PRÓXIMAMENTE</button>
+        </div>
+
+        <div class="drop-card">
+            <h3>Drop: Edición Limitada</h3>
+            <img src="1000056615.jpg" alt="Camiseta Limitada">
+            <button class="status">PRÓXIMAMENTE</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>EST. 2026</p>
+    </footer>
+
+</body>
+</html>
