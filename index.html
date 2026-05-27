@@ -4,31 +4,55 @@
     <meta charset="UTF-8">
     <title>I.L. COLECCIÓN</title>
     <style>
-        body { background-color: #0d0d0d; color: #c4a161; font-family: sans-serif; text-align: center; margin: 0; padding: 20px; }
-        .main-logo { width: 200px; margin-top: 30px; }
-        h1 { letter-spacing: 5px; }
-        .drops-container { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 40px; }
-        .drop-card { width: 300px; }
-        .product-image { width: 100%; border: 1px solid #333; }
-        .status { background: #1a1a1a; padding: 10px; margin-top: 10px; border: 1px solid #333; color: #c4a161; }
+        body { background-color: #0d0d0d; color: #fff; font-family: 'Helvetica', sans-serif; margin: 0; padding: 0; text-align: center; }
+        header { padding: 50px 20px; }
+        .main-logo { width: 180px; }
+        h1 { color: #c4a161; letter-spacing: 8px; margin-top: 10px; }
+        
+        .drops-container { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; padding: 20px; }
+        .drop-card { width: 320px; background: #1a1a1a; padding: 15px; border: 1px solid #333; }
+        .product-image { width: 100%; margin-bottom: 15px; }
+        
+        .price { font-size: 1.5em; color: #c4a161; margin: 10px 0; font-weight: bold; }
+        .btn-compra { display: block; background: #c4a161; color: #000; padding: 12px; text-decoration: none; font-weight: bold; margin-top: 10px; }
+        
+        .newsletter { margin-top: 60px; padding: 40px; background: #080808; border-top: 1px solid #333; }
+        input { padding: 10px; width: 250px; background: #1a1a1a; border: 1px solid #333; color: #fff; }
+        button { padding: 10px 20px; background: #c4a161; border: none; cursor: pointer; }
     </style>
 </head>
 <body>
-    
-    <img src="1000056646.jpg" class="main-logo" alt="Logo">
-    <h1>I.L. COLECCIÓN</h1>
-    
+
+    <header>
+        <img src="1000056646.jpg" class="main-logo" alt="Logo">
+        <h1>I.L. COLECCIÓN</h1>
+        <p>DISEÑO INDEPENDIENTE | HECHO EN MÉXICO</p>
+    </header>
+
     <div class="drops-container">
         <div class="drop-card">
             <h3>EUPHORIA</h3>
-            <img src="IMG-20260526-WA0049.jpg" class="product-image" alt="Euphoria">
-            <div class="status">PRÓXIMAMENTE</div>
+            <img src="IMG-20260526-WA0049.jpg" class="product-image">
+            <div class="price">$$$ 850 MXN</div>
+            <a href="#" class="btn-compra">PRÓXIMAMENTE</a>
         </div>
+        
         <div class="drop-card">
             <h3>EDICIÓN LIMITADA</h3>
-            <img src="IMG-20260526-WA0033.jpg" class="product-image" alt="Limitada">
-            <div class="status">PRÓXIMAMENTE</div>
+            <img src="IMG-20260526-WA0033.jpg" class="product-image">
+            <div class="price">$$$ 950 MXN</div>
+            <a href="#" class="btn-compra">PRÓXIMAMENTE</a>
         </div>
     </div>
+
+    <div class="newsletter">
+        <h3>REGÍSTRATE PARA ACCESO ANTICIPADO</h3>
+        <p>Sé el primero en saber cuando lancemos el drop.</p>
+        <form>
+            <input type="email" placeholder="Tu correo electrónico" required>
+            <button type="submit">UNIRME</button>
+        </form>
+    </div>
+
 </body>
 </html>
