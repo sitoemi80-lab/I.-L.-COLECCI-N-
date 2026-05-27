@@ -9,9 +9,14 @@
         h1 { font-size: 3em; letter-spacing: 5px; margin-top: 50px; }
         .container { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 50px; }
         .drop-card { background: #1a1a1a; padding: 20px; border: 1px solid #d4af37; border-radius: 10px; width: 300px; }
-        .drop-card img { width: 100%; border-radius: 5px; }
-        .status { margin-top: 20px; font-weight: bold; color: #fff; background: #333; padding: 10px; border-radius: 5px; pointer-events: none; }
-        footer { margin-top: 100px; color: #666; }
+        .drop-card img { width: 100%; border-radius: 5px; margin-bottom: 15px; }
+        .status { font-weight: bold; color: #000; background: #d4af37; padding: 10px; border-radius: 5px; border: none; cursor: not-allowed; width: 100%; }
+        
+        /* Sección de registro */
+        .newsletter { margin-top: 80px; padding: 30px; border-top: 1px solid #333; }
+        input { padding: 10px; width: 250px; border: 1px solid #d4af37; background: #000; color: #fff; }
+        button.join { padding: 10px 20px; background: #d4af37; border: none; color: #000; cursor: pointer; }
+        footer { margin-top: 50px; color: #666; font-size: 0.8em; }
     </style>
 </head>
 <body>
@@ -23,18 +28,26 @@
         <div class="drop-card">
             <h3>Drop: EUPHORIA</h3>
             <img src="1000056661.jpg" alt="Camiseta Euphoria">
-            <button class="status">PRÓXIMAMENTE</button>
+            <button class="status" disabled>PRÓXIMAMENTE</button>
         </div>
 
         <div class="drop-card">
             <h3>Drop: Edición Limitada</h3>
             <img src="1000056615.jpg" alt="Camiseta Limitada">
-            <button class="status">PRÓXIMAMENTE</button>
+            <button class="status" disabled>PRÓXIMAMENTE</button>
         </div>
     </div>
 
+    <div class="newsletter">
+        <h3>¿Quieres ser el primero en saber cuándo lanzamos?</h3>
+        <form onsubmit="alert('¡Gracias! Te avisaremos cuando estemos listos.'); return false;">
+            <input type="email" placeholder="Tu correo electrónico" required>
+            <button type="submit" class="join">REGISTRARME</button>
+        </form>
+    </div>
+
     <footer>
-        <p>EST. 2026</p>
+        <p>I.L. COLECCIÓN © 2026 | EST. 2026</p>
     </footer>
 
 </body>
